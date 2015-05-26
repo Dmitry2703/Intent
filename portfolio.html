@@ -3,51 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
+	<link href="http://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet" type="text/css">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<div class="page-wrapper">
 		<header class="page-header">
-			<div class="strip">
-				<a class="social-btn social-btn_style_black-white social-btn_net_twitter-black-white text-hide" href="#">
-					twitter
-				</a>
-				<a class="social-btn social-btn_style_black-white social-btn_net_facebook-black-white text-hide" href="#">
-					facebook
-				</a>
-				<a class="social-btn social-btn_style_black-white social-btn_net_dribbble-black-white text-hide" href="#">
-					dribbble
-				</a>
-				<a class="social-btn social-btn_style_black-white social-btn_net_rss-black-white text-hide" href="#">
-					RSS
-				</a>
+			<div class="container cl">
+				<div class="row strip">
+					<div class="col col4 col-offset8">
+						<a class="social-btn social-btn_style_black-white social-btn_net_twitter-black-white text-hide" href="#">
+							twitter
+						</a>
+						<a class="social-btn social-btn_style_black-white social-btn_net_facebook-black-white text-hide" href="#">
+							facebook
+						</a>
+						<a class="social-btn social-btn_style_black-white social-btn_net_dribbble-black-white text-hide" href="#">
+							dribbble
+						</a>
+						<a class="social-btn social-btn_style_black-white social-btn_net_rss-black-white text-hide" href="#">
+							RSS
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="logo col col2">
+						<span class="text_color_light text-primary">i</span>
+						<h1>Intent<span class="text_color_info">.</span></h1>
+					</div>
+					<div class="col col6 col-offset4">
+						<nav>
+							<ul class="main-nav">
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="index.html">home</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="blog.html">blog</a>
+								</li>
+								<li class="main-nav__item main-nav__item_state_current">
+									<a class="main-nav__link" href="#">portfolio</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="contact.html">contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
-			<div class="logo">
-				<span>i</span>
-				<h1>Intent<span>.</span></h1>
-			</div>
-			<nav>
-				<ul class="main-nav">
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="index.html">home</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="blog.html">blog</a>
-					</li>
-					<li class="main-nav__item main-nav__item_state_current">
-						<a class="main-nav__link" href="portfolio.html">portfolio</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="contact.html">contact</a>
-					</li>
-				</ul>
-			</nav>
 		</header>
+		<div class="photo-banner"></div>
 		<main>
 			<div class="page-intro">
-				<h2>Portfolio</h2>
-				<p>See Some of my work</p>
+				<h2 class="page-intro__caption">Portfolio</h2>
+				<p class="page-intro__text">See Some of my work</p>
 			</div>
 			<section class="portfolio">
 				<ul class="portfolio-nav">
@@ -69,106 +79,190 @@
 				</ul>
 				<ul class="portfolio-list">
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work1" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work1" width="" height="">
+								<figcaption class="portfolio-list__caption">Business Cards</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work2" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work2" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work2</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work3" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work3" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work3</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work4" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work4" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work4</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work5" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work5" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work5</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work6" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work6" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work6</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work7" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work7" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work7</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work8" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work8" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work8</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work9" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work9" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work9</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work10" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work10" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work10</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work11" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work11" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work11</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work12" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work12" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work12</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work13" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work13" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work13</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work14" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work14" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work14</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work15" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work15" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work15</figcaption>
+							</figure>
+						</a>
 					</li>
 					<li class="portfolio-list__item">
-						<a class="portfolio-list__link" href="#"><img src="" alt="Work16" width="" height=""></a>
+						<a class="portfolio-list__link" href="#">
+							<figure>
+								<img src="" alt="Work16" width="" height="">
+								<figcaption class="portfolio-list__caption">Text for Work16</figcaption>
+							</figure>
+						</a>
 					</li>
 				</ul>
 			</section>
 		</main>
 		<footer class="page-footer">
-			<section class="posts">
-				<h2>recent posts</h2>
-				<ul class="posts-list">
-					<li class="posts-list__item">
-						<a class="posts-list__link" href="#">Wedding Photos that Will Blow Your Mind Away.</a>
-					</li>
-					<li class="posts-list__item">
-						<a class="posts-list__link" href="#">Intent WordPress Theme Features are Amazing.</a>
-					</li>
-					<li class="posts-list__item">
-						<a class="posts-list__link" href="#">A New Era of Design is Here</a>
-					</li>
-					<li class="posts-list__item">
-						<a class="posts-list__link" href="#">Creativio WordPress Theme now Available for Sale.</a>
-					</li>
-				</ul>
-			</section>
-			<section class="about">
-				<h2>about intent</h2>
-				<p>
-					Lorem ipsum dolor sit amet, at mea eius corpora, at eam munere facilisi omittantur. Nemore accusam usu no, ei nec vidit commune constituto. Te usu inani volumus, eum albucius menandri at, sed apeirian percipitur ad.
-				</p>
-				<p>
-					Id vitae regione has. In tollit dicant vim. His ex detracto percipitur, id vis nibh quas illum. Delicata dissentiet ius ne, latine euripidis quaerendum et vis.
-				</p>
-			</section>
-			<section class="social">
-				<h2>social media</h2>
-				<a class="social-btn social-btn_net_rss text-hide" href="#">RSS</a>
-				<a class="social-btn social-btn_net_facebook text-hide" href="#">facebook</a>
-				<a class="social-btn social-btn_net_twitter text-hide" href="#">twitter</a>
-				<a class="social-btn social-btn_net_mail text-hide" href="mailto:#">mail</a>
-				<a class="social-btn social-btn_net_tumblr text-hide" href="#">tumblr</a>
-				<a class="social-btn social-btn_net_path text-hide" href="#">path</a>
-				<a class="social-btn social-btn_net_vimeo text-hide" href="#">vimeo</a>
-				<a class="social-btn social-btn_net_zerply text-hide" href="#">zerply</a>
-				<a class="social-btn social-btn_net_picasa text-hide" href="#">picasa</a>
-				<a class="social-btn social-btn_net_stumble-upon text-hide" href="#">stumble upon</a>
-				<a class="social-btn social-btn_net_skype text-hide" href="#">skype</a>
-				<a class="social-btn social-btn_net_reddit text-hide" href="#">reddit</a>
-				<a class="social-btn social-btn_net_evernote text-hide" href="#">evernote</a>
-				<a class="social-btn social-btn_net_behance text-hide" href="#">behance</a>
-				<a class="social-btn social-btn_net_dribbble text-hide" href="#">dribbble</a>
-				<a class="social-btn social-btn_net_digg text-hide" href="#">digg</a>
-				<a class="social-btn social-btn_net_blogger text-hide" href="#">blogger</a>
-				<a class="social-btn social-btn_net_flickr text-hide" href="#">flickr</a>
-				<a class="social-btn social-btn_net_linkedin text-hide" href="#">linkedin</a>
-				<a class="social-btn social-btn_net_google-plus text-hide" href="#">google+</a>
-			</section>
+			<div class="container cl">
+				<div class="row">
+					<section class="footer-section posts col col4">
+						<h2 class="footer-section__caption">recent posts</h2>
+						<ul class="posts-list">
+							<li class="posts-list__item">
+								<a class="posts-list__link" href="#">Wedding Photos that Will Blow Your Mind Away.</a>
+							</li>
+							<li class="posts-list__item">
+								<a class="posts-list__link" href="#">Intent WordPress Theme Features are Amazing.</a>
+							</li>
+							<li class="posts-list__item">
+								<a class="posts-list__link" href="#">A New Era of Design is Here</a>
+							</li>
+							<li class="posts-list__item">
+								<a class="posts-list__link" href="#">Creativio WordPress Theme now Available for Sale.</a>
+							</li>
+						</ul>
+					</section>
+					<section class="footer-section about col col4">
+						<h2 class="footer-section__caption">about intent</h2>
+						<p class="about__text">
+							Lorem ipsum dolor sit amet, at mea eius corpora, at eam munere facilisi omittantur. Nemore accusam usu no, ei nec vidit commune constituto. Te usu inani volumus, eum albucius menandri at, sed apeirian percipitur ad.
+						</p>
+						<p class="about__text">
+							Id vitae regione has. In tollit dicant vim. His ex detracto percipitur, id vis nibh quas illum. Delicata dissentiet ius ne, latine euripidis quaerendum et vis.
+						</p>
+					</section>
+					<section class="footer-section social col col4">
+						<h2 class="footer-section__caption">social media</h2>
+						<a class="social-btn social-btn_net_rss text-hide" href="#">RSS</a>
+						<a class="social-btn social-btn_net_facebook text-hide" href="#">facebook</a>
+						<a class="social-btn social-btn_net_twitter text-hide" href="#">twitter</a>
+						<a class="social-btn social-btn_net_mail text-hide" href="mailto:#">mail</a>
+						<a class="social-btn social-btn_net_tumblr text-hide" href="#">tumblr</a>
+						<a class="social-btn social-btn_net_path text-hide" href="#">path</a>
+						<a class="social-btn social-btn_net_vimeo text-hide" href="#">vimeo</a>
+						<a class="social-btn social-btn_net_zerply text-hide" href="#">zerply</a>
+						<a class="social-btn social-btn_net_picasa text-hide" href="#">picasa</a>
+						<a class="social-btn social-btn_net_stumble-upon text-hide" href="#">stumble upon</a>
+						<a class="social-btn social-btn_net_skype text-hide" href="#">skype</a>
+						<a class="social-btn social-btn_net_reddit text-hide" href="#">reddit</a>
+						<a class="social-btn social-btn_net_evernote text-hide" href="#">evernote</a>
+						<a class="social-btn social-btn_net_behance text-hide" href="#">behance</a>
+						<a class="social-btn social-btn_net_dribbble text-hide" href="#">dribbble</a>
+						<a class="social-btn social-btn_net_digg text-hide" href="#">digg</a>
+						<a class="social-btn social-btn_net_blogger text-hide" href="#">blogger</a>
+						<a class="social-btn social-btn_net_flickr text-hide" href="#">flickr</a>
+						<a class="social-btn social-btn_net_linkedin text-hide" href="#">linkedin</a>
+						<a class="social-btn social-btn_net_google-plus text-hide" href="#">google+</a>
+					</section>
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>

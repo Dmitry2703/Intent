@@ -3,94 +3,114 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Blog</title>
+	<link href="http://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet" type="text/css">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<div class="page-wrapper">
 		<header class="page-header">
-			<div class="strip">
-				<a class="social-btn social-btn_style_black-white social-btn_net_twitter-black-white text-hide" href="#">
-					twitter
-				</a>
-				<a class="social-btn social-btn_style_black-white social-btn_net_facebook-black-white text-hide" href="#">
-					facebook
-				</a>
-				<a class="social-btn social-btn_style_black-white social-btn_net_dribbble-black-white text-hide" href="#">
-					dribbble
-				</a>
-				<a class="social-btn social-btn_style_black-white social-btn_net_rss-black-white text-hide" href="#">
-					RSS
-				</a>
+			<div class="container cl">
+				<div class="row strip">
+					<div class="col col4 col-offset8">
+						<a class="social-btn social-btn_style_black-white social-btn_net_twitter-black-white text-hide" href="#">
+							twitter
+						</a>
+						<a class="social-btn social-btn_style_black-white social-btn_net_facebook-black-white text-hide" href="#">
+							facebook
+						</a>
+						<a class="social-btn social-btn_style_black-white social-btn_net_dribbble-black-white text-hide" href="#">
+							dribbble
+						</a>
+						<a class="social-btn social-btn_style_black-white social-btn_net_rss-black-white text-hide" href="#">
+							RSS
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="logo col col2">
+						<span class="text_color_light text-primary">i</span>
+						<h1>Intent<span class="text_color_info">.</span></h1>
+					</div>
+					<div class="col col6 col-offset4">
+						<nav>
+							<ul class="main-nav">
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="index.html">home</a>
+								</li>
+								<li class="main-nav__item main-nav__item_state_current">
+									<a class="main-nav__link" href="#">blog</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="portfolio.html">portfolio</a>
+								</li>
+								<li class="main-nav__item">
+									<a class="main-nav__link" href="contact.html">contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
-			<div class="logo">
-				<span>i</span>
-				<h1>Intent<span>.</span></h1>
-			</div>
-			<nav>
-				<ul class="main-nav">
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="index.html">home</a>
-					</li>
-					<li class="main-nav__item main-nav__item_state_current">
-						<a class="main-nav__link" href="blog.html">blog</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="portfolio.html">portfolio</a>
-					</li>
-					<li class="main-nav__item">
-						<a class="main-nav__link" href="contact.html">contact</a>
-					</li>
-				</ul>
-			</nav>
 		</header>
+		<div class="photo-banner"></div>
 		<main>
 			<div class="page-intro">
-				<h2>Blog</h2>
-				<p>Keep in the loop</p>
+				<h2 class="page-intro__caption">Blog</h2>
+				<p class="page-intro__text">Keep in the loop</p>
 			</div>
 			<article class="post">
-				<h1><a href="#">Amazing Free Portfolio PSD Theme</a></h1>
-				<img class="post-image" src="" alt="Amazing Free Portfolio PSD Theme" width="" height="">
-				<p>Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior.</p>
-				<p>Maecenas ipsum metus, semper hendrerit varius mattis,  sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  <a href="#">...</a></p>
+				<h1 class="post__caption"><a href="#">Amazing Free Portfolio PSD Theme</a></h1>
+				<img class="post__image" src="" alt="Amazing Free Portfolio PSD Theme" width="" height="">
+				<p class="post__text">
+					Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior.
+				</p>
+				<p class="post__text">
+					Maecenas ipsum metus, semper hendrerit varius mattis,  sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  <a href="#">...</a>
+				</p>
 				<div class="post-data">
-					<h3>Date</h3>
-					<time datetime="2012-04-15">April 15, 2012</time>
-					<h3>Tags</h3>
-					Website  |  Design
-					<h3>Comments</h3>
-					4
+					<h3 class="post-data__caption">Date</h3>
+					<time class="post-data__text" datetime="2012-04-15">April 15, 2012</time>
+					<h3 class="post-data__caption">Tags</h3>
+					<span class="post-data__text">Website  |  Design</span>
+					<h3 class="post-data__caption">Comments</h3>
+					<span class="post-data__text">4</span>
 				</div>
 			</article>
 			<article class="post">
-				<h1><a href="#">Reimer Wedding Footage</a></h1>
-				<img class="post-image" src="" alt="Reimer Wedding Footage" width="" height="">
-				<p>Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior.</p>
-				<p>Maecenas ipsum metus, semper hendrerit varius mattis,  sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  <a href="#">...</a></p>
+				<h1 class="post__caption"><a href="#">Reimer Wedding Footage</a></h1>
+				<img class="post__image" src="" alt="Reimer Wedding Footage" width="" height="">
+				<p class="post__text">
+					Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior.
+				</p>
+				<p class="post__text">
+					Maecenas ipsum metus, semper hendrerit varius mattis,  sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  <a href="#">...</a>
+				</p>
 				<div class="post-data">
-					<h3>Date</h3>
-					<time datetime="2012-04-15">April 15, 2012</time>
-					<h3>Tags</h3>
-					Website  |  Design
-					<h3>Comments</h3>
-					4
+					<h3 class="post-data__caption">Date</h3>
+					<time class="post-data__text" datetime="2012-04-15">April 15, 2012</time>
+					<h3 class="post-data__caption">Tags</h3>
+					<span class="post-data__text">Website  |  Design</span>
+					<h3 class="post-data__caption">Comments</h3>
+					<span class="post-data__text">4</span>
 				</div>
 			</article>
 			<article class="post">
-				<h1><a href="#">Sound  Clip  of  Concert</a></h1>
-				<audio src="" controls>
-					<source src="">
-				</audio>
-				<p>Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior.</p>
-				<p>Maecenas ipsum metus, semper hendrerit varius mattis,  sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  <a href="#">...</a></p>
+				<h1 class="post__caption"><a href="#">Sound  Clip  of  Concert</a></h1>
+				<audio src="" controls></audio>
+				<p class="post__text">
+					Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior.
+				</p>
+				<p class="post__text">
+					Maecenas ipsum metus, semper hendrerit varius mattis,  sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  <a href="#">...</a>
+				</p>
 				<div class="post-data">
-					<h3>Date</h3>
-					<time datetime="2012-04-15">April 15, 2012</time>
-					<h3>Tags</h3>
-					Website  |  Design
-					<h3>Comments</h3>
-					4
+					<h3 class="post-data__caption">Date</h3>
+					<time class="post-data__text" datetime="2012-04-15">April 15, 2012</time>
+					<h3 class="post-data__caption">Tags</h3>
+					<span class="post-data__text">Website  |  Design</span>
+					<h3 class="post-data__caption">Comments</h3>
+					<span class="post-data__text">4</span>
 				</div>
 			</article>
 			<ul class="blog-pagination">
@@ -106,12 +126,14 @@
 			</ul>
 		</main>
 		<aside class="sidebar">
-			<section class="about-summary">
-				<h2>About Intent</h2>
-				<p>Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem ati.</p>
+			<section class="sidebar-section about-summary">
+				<h2 class="sidebar-section__caption">About Intent</h2>
+				<p class="about-summary__text">
+					Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem ati.
+				</p>
 			</section>
-			<section class="categories">
-				<h2>Categories</h2>
+			<section class="sidebar-section categories">
+				<h2 class="sidebar-section__caption">Categories</h2>
 				<ul class="categories-list">
 					<li class="categories-list__item">
 						<a class="categories-list__link" href="#">Videos (3)</a>
@@ -133,8 +155,8 @@
 					</li>
 				</ul>
 			</section>
-			<section class="advertisements">
-				<h2>Advertisements</h2>
+			<section class="sidebar-section advertisements">
+				<h2 class="sidebar-section__caption">Advertisements</h2>
 				<div class="advert"></div>
 				<div class="advert advert_state_empty"></div>
 				<div class="advert advert_state_empty"></div>
@@ -142,55 +164,59 @@
 			</section>
 		</aside>
 		<footer class="page-footer">
-			<section class="posts">
-				<h2>recent posts</h2>
-				<ul class="posts-list">
-					<li class="posts-list__item">
-						<a class="posts-list__link" href="#">Wedding Photos that Will Blow Your Mind Away.</a>
-					</li>
-					<li class="posts-list__item">
-						<a class="posts-list__link" href="#">Intent WordPress Theme Features are Amazing.</a>
-					</li>
-					<li class="posts-list__item">
-						<a class="posts-list__link" href="#">A New Era of Design is Here</a>
-					</li>
-					<li class="posts-list__item">
-						<a class="posts-list__link" href="#">Creativio WordPress Theme now Available for Sale.</a>
-					</li>
-				</ul>
-			</section>
-			<section class="about">
-				<h2>about intent</h2>
-				<p>
-					Lorem ipsum dolor sit amet, at mea eius corpora, at eam munere facilisi omittantur. Nemore accusam usu no, ei nec vidit commune constituto. Te usu inani volumus, eum albucius menandri at, sed apeirian percipitur ad.
-				</p>
-				<p>
-					Id vitae regione has. In tollit dicant vim. His ex detracto percipitur, id vis nibh quas illum. Delicata dissentiet ius ne, latine euripidis quaerendum et vis.
-				</p>
-			</section>
-			<section class="social">
-				<h2>social media</h2>
-				<a class="social-btn social-btn_net_rss text-hide" href="#">RSS</a>
-				<a class="social-btn social-btn_net_facebook text-hide" href="#">facebook</a>
-				<a class="social-btn social-btn_net_twitter text-hide" href="#">twitter</a>
-				<a class="social-btn social-btn_net_mail text-hide" href="mailto:#">mail</a>
-				<a class="social-btn social-btn_net_tumblr text-hide" href="#">tumblr</a>
-				<a class="social-btn social-btn_net_path text-hide" href="#">path</a>
-				<a class="social-btn social-btn_net_vimeo text-hide" href="#">vimeo</a>
-				<a class="social-btn social-btn_net_zerply text-hide" href="#">zerply</a>
-				<a class="social-btn social-btn_net_picasa text-hide" href="#">picasa</a>
-				<a class="social-btn social-btn_net_stumble-upon text-hide" href="#">stumble upon</a>
-				<a class="social-btn social-btn_net_skype text-hide" href="#">skype</a>
-				<a class="social-btn social-btn_net_reddit text-hide" href="#">reddit</a>
-				<a class="social-btn social-btn_net_evernote text-hide" href="#">evernote</a>
-				<a class="social-btn social-btn_net_behance text-hide" href="#">behance</a>
-				<a class="social-btn social-btn_net_dribbble text-hide" href="#">dribbble</a>
-				<a class="social-btn social-btn_net_digg text-hide" href="#">digg</a>
-				<a class="social-btn social-btn_net_blogger text-hide" href="#">blogger</a>
-				<a class="social-btn social-btn_net_flickr text-hide" href="#">flickr</a>
-				<a class="social-btn social-btn_net_linkedin text-hide" href="#">linkedin</a>
-				<a class="social-btn social-btn_net_google-plus text-hide" href="#">google+</a>
-			</section>
+			<div class="container cl">
+				<div class="row">
+					<section class="footer-section posts col col4">
+						<h2 class="footer-section__caption">recent posts</h2>
+						<ul class="posts-list">
+							<li class="posts-list__item">
+								<a class="posts-list__link" href="#">Wedding Photos that Will Blow Your Mind Away.</a>
+							</li>
+							<li class="posts-list__item">
+								<a class="posts-list__link" href="#">Intent WordPress Theme Features are Amazing.</a>
+							</li>
+							<li class="posts-list__item">
+								<a class="posts-list__link" href="#">A New Era of Design is Here</a>
+							</li>
+							<li class="posts-list__item">
+								<a class="posts-list__link" href="#">Creativio WordPress Theme now Available for Sale.</a>
+							</li>
+						</ul>
+					</section>
+					<section class="footer-section about col col4">
+						<h2 class="footer-section__caption">about intent</h2>
+						<p class="about__text">
+							Lorem ipsum dolor sit amet, at mea eius corpora, at eam munere facilisi omittantur. Nemore accusam usu no, ei nec vidit commune constituto. Te usu inani volumus, eum albucius menandri at, sed apeirian percipitur ad.
+						</p>
+						<p class="about__text">
+							Id vitae regione has. In tollit dicant vim. His ex detracto percipitur, id vis nibh quas illum. Delicata dissentiet ius ne, latine euripidis quaerendum et vis.
+						</p>
+					</section>
+					<section class="footer-section social col col4">
+						<h2 class="footer-section__caption">social media</h2>
+						<a class="social-btn social-btn_net_rss text-hide" href="#">RSS</a>
+						<a class="social-btn social-btn_net_facebook text-hide" href="#">facebook</a>
+						<a class="social-btn social-btn_net_twitter text-hide" href="#">twitter</a>
+						<a class="social-btn social-btn_net_mail text-hide" href="mailto:#">mail</a>
+						<a class="social-btn social-btn_net_tumblr text-hide" href="#">tumblr</a>
+						<a class="social-btn social-btn_net_path text-hide" href="#">path</a>
+						<a class="social-btn social-btn_net_vimeo text-hide" href="#">vimeo</a>
+						<a class="social-btn social-btn_net_zerply text-hide" href="#">zerply</a>
+						<a class="social-btn social-btn_net_picasa text-hide" href="#">picasa</a>
+						<a class="social-btn social-btn_net_stumble-upon text-hide" href="#">stumble upon</a>
+						<a class="social-btn social-btn_net_skype text-hide" href="#">skype</a>
+						<a class="social-btn social-btn_net_reddit text-hide" href="#">reddit</a>
+						<a class="social-btn social-btn_net_evernote text-hide" href="#">evernote</a>
+						<a class="social-btn social-btn_net_behance text-hide" href="#">behance</a>
+						<a class="social-btn social-btn_net_dribbble text-hide" href="#">dribbble</a>
+						<a class="social-btn social-btn_net_digg text-hide" href="#">digg</a>
+						<a class="social-btn social-btn_net_blogger text-hide" href="#">blogger</a>
+						<a class="social-btn social-btn_net_flickr text-hide" href="#">flickr</a>
+						<a class="social-btn social-btn_net_linkedin text-hide" href="#">linkedin</a>
+						<a class="social-btn social-btn_net_google-plus text-hide" href="#">google+</a>
+					</section>
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>
