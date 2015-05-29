@@ -231,6 +231,8 @@ a { text-decoration: none; }
 /* Main Navigation */
 
 .main-nav {
+  position: relative;
+  right: -12px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -274,11 +276,11 @@ a { text-decoration: none; }
 /* Main */
 
 .page-intro {
-  position: relative;
-  top: -30px;
+  /*position: relative;
+  top: -30px;*/
   padding-left: 38px;
   padding-right: 38px;
-  padding-top: 35px;
+  padding-top: 32px;
   padding-bottom: 40px;
   background: #25282b url(../img/bg-pattern-dark.jpg) repeat-x;
 }
@@ -286,7 +288,7 @@ a { text-decoration: none; }
 .page-intro__caption {
   font: 700 30px/36px Bitter, Georgia, "Times New Roman", serif;
   color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .page-intro__text {
@@ -298,7 +300,6 @@ a { text-decoration: none; }
   position: relative;
   top: -30px;
   z-index: 10;
-  padding-left: 26px;
   box-shadow:
   inset -1px -1px #dfdfdf, 
   inset 1px -1px #dfdfdf;
@@ -406,6 +407,10 @@ a { text-decoration: none; }
   padding-bottom: 48px;
 }
 
+.feature:first-child { left: 26px; }
+
+.feature:nth-child(2) { left: 11px; }
+
 .feature__caption {
   margin-bottom: 13px;
   margin-left: 47px;
@@ -427,8 +432,6 @@ a { text-decoration: none; }
 /* Text Banner */
 
 .text-banner {
-  position: relative;
-  left: -14px;
   margin-bottom: 47px;
   font: 400 18px/24px Bitter, Georgia, "Times New Roman", serif;
   color: #252525;
@@ -449,7 +452,11 @@ a { text-decoration: none; }
 
 /* Portfolio */
 
-.portfolio { padding-bottom: 6px; }
+.portfolio { 
+  position: relative;
+  left: 26px;
+  padding-bottom: 6px; 
+}
 
 /* Portfolio Navigation */
 
@@ -545,14 +552,14 @@ a { text-decoration: none; }
   position: relative;
   top: -60px;
   z-index: 1;
-  padding-top: 67px;
+  padding-top: 65px;
   padding-bottom: 46px;
   background: #25282b url(../img/bg-pattern-dark.jpg) repeat;
   border-top: 8px solid #ea5a4b;
 }
 
 .footer-section__caption {
-  margin-bottom: 22px;
+  margin-bottom: 19px;
   font: 700 14px/18px Helvetica, Arial, sans-serif;
   color: #fff;
   text-transform: uppercase;
@@ -563,7 +570,7 @@ a { text-decoration: none; }
   color: #adadad;
 }
 
-.footer-section__text + .footer-section__text { margin-top: 20px; }
+.footer-section__text + .footer-section__text { margin-top: 18px; }
 
 /* Posts */
 
@@ -579,8 +586,8 @@ a { text-decoration: none; }
 
 .posts-list__link {
   display: block;
-  padding-top: 13px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   font: 700 14px/18px Bitter, Georgia, "Times New Roman", serif;
   color: #adadad;
 }
@@ -616,7 +623,9 @@ a { text-decoration: none; }
 =========================
 */
 
-.page-content_page_portfolio { padding-top: 28px; }
+.page-content_page_portfolio { padding-bottom: 2px; }
+
+.page-intro_page_portfolio { margin-bottom: 28px; }
 
 /* 
 =========================
@@ -624,48 +633,53 @@ a { text-decoration: none; }
 =========================
 */
 
-.page-content_page_contact {
-  padding-top: 26px;
-  padding-bottom: 29px;
-  padding-left: 26px;
-  padding-right: 26px;
-}
+.page-content_page_contact { padding-bottom: 29px; }
+
+.page-intro_page_contact { margin-bottom: 26px; }
 
 /* Map */
 
 .map  {
+  width: 888px;
   height: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  margin-left: 26px;
+  margin-right: 26px;
   background: #ccdda9 url(../img/temp/map.jpg) center center no-repeat;
   background-size: auto 400px;
 }
 
 #map-canvas {
   display: block;
-  width: 100%;
+  width: 888px;
   height: 400px;
 }
 
 /* Contacts */
 
-.text-block { 
-  margin-bottom: 16px;
-  padding-right: 50px; 
+.text-block {
+  position: relative;
+  left: 26px;
+}
+
+.text-block__text { 
+  margin-bottom: 15px;
+  padding-right: 71px; 
 }
 
 .contacts__text { font-style: normal; }
 
-.contacts__text + .contacts__text { margin-top: 18px; }
+.contacts__text + .contacts__text { margin-top: 14px; }
 
 .contacts__link { color: #252525; }
 
 /* Form */
-
+/*
 .form-message {
   position: relative;
-  left: -10px;
+  left: -8px;
 }
-
+*/
 .form-message__input,
 .form-message__textarea {
   box-sizing: border-box;
@@ -706,24 +720,24 @@ a { text-decoration: none; }
 .form-message__input {
   display: inline-block;
   vertical-align: middle;
-  width: 288px;
-  padding-top: 14px;
-  padding-bottom: 11px;
+  width: 290px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 15px;
 }
 
-.form-message__input:nth-of-type(odd) { margin-right: 10px; }
+.form-message__input:nth-of-type(odd) { margin-right: 12px; }
 
 .form-message__input:nth-of-type(even) { margin-right: -4px; }
 
 .form-message__textarea {
   display: block;
-  width: 593px;
-  height: 203px;
+  width: 595px;
+  height: 205px;
   margin-bottom: 15px;
-  padding: 13px 15px;
+  padding: 12px 15px;
   resize: none;
 }
 
@@ -739,3 +753,206 @@ a { text-decoration: none; }
   color: #fff;
   text-transform: uppercase;
 }
+
+/* 
+=========================
+  BLOG.HTML
+=========================
+*/
+
+.page-content_page_blog { padding-bottom: 27px; }
+
+.page-intro_page_blog { width: 864px; }
+
+/* Post */
+
+.post { 
+  margin-left: 25px;
+  margin-right: 23px;
+  padding-top: 24px;
+  padding-bottom: 33px; 
+}
+
+.post + .post { border-top: 5px solid #ea5a4b; }
+
+.post__caption {
+  margin-bottom: 14px;
+  font: 400 18px/24px Bitter, Georgia, "Times New Roman", serif;
+  color: #464646;
+}
+
+.post__caption-link {
+  font: 400 18px/24px Bitter, Georgia, "Times New Roman", serif;
+  color: #464646;
+}
+
+.post__image-wrapper {
+  position: relative;
+  width: 652px;
+  height: 302px;
+  margin-bottom: 24px;
+}
+
+.post__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.post-data {
+  float: left;
+  width: 150px;
+}
+
+.post-data__caption {
+  margin-bottom: 2px;
+  margin-top: 10px;
+  font: 400 14px/20px Bitter, Georgia, "Times New Roman", serif;
+  color: #252525;
+}
+
+.post-data__caption:first-child { margin-top: 0; }
+
+.post-data__text {
+  font: 400 12px/20px Helvetica, Arial, sans-serif; 
+  color: #ea5a4b;
+}
+
+.post__text {
+  margin-left: 177px;
+  font: 400 14px/18px Helvetica, Arial, sans-serif;
+  color: #252525;
+}
+
+.post__text + .post__text { margin-top: 19px; }
+
+.post__link { color: #252525; }
+
+.post__video {
+  outline: 1px solid red;
+  margin-bottom: 19px;
+}
+
+.post__audio {
+  outline: 1px solid red;
+  display: block;
+  margin-bottom: 29px;
+}
+
+/* Blog Pagination */
+
+.blog-pagination {
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-pagination__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.blog-pagination__item_state_current {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: #fff;
+  background-color: #ea5a4b;
+}
+
+.blog-pagination__link {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font: 700 14px/16px Helvetica, Arial, sans-serif;
+  color: #2d2d2d;
+}
+
+.blog-pagination__link:hover {
+  color: #fff;
+  background-color: #ea5a4b;
+}
+
+/* Sidebar */
+
+.sidebar { 
+  position: relative;
+  left: -13px;
+  margin-top: 188px; 
+}
+
+.sidebar-section { 
+  padding-bottom: 21px;
+  padding-right: 13px; 
+}
+
+.sidebar-section__caption {
+  margin-bottom: 22px;
+  font: 400 16px/26px Bitter, Georgia, "Times New Roman", serif; 
+  color: #252525;
+  border-bottom: 5px solid #ea5a4b;
+}
+
+.sidebar-section__text {
+  font: 400 14px/18px Helvetica, Arial, sans-serif;
+  color: #252525;
+}
+
+.categories-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories-list__link {
+  font: 400 14px/18px Helvetica, Arial, sans-serif;
+  color: #252525;
+}
+
+.advert {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  margin-right: 1px;
+}
+
+.advert-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.advert_state_empty {
+  box-sizing: border-box;
+  padding-top: 33px;
+  font: 400 14px/18px Bitter, Georgia, "Times New Roman", serif; 
+  color: #c6c6c6;
+  text-align: center;
+  background-color: #f5f5f5;
+  outline: 1px solid #c9c9c9;
+}
+
+.advert_state_empty:hover { outline: 1px solid #c9c9c9; }
